@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build web assets
-        run: ionic build --project Angular-FK13
+        run: npx ionic build --project Angular-FK13
 
       - name: Sync Capacitor
         run: npx cap sync android

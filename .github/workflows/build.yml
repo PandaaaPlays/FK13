@@ -37,7 +37,10 @@ jobs:
         run: chmod +x android/gradlew
 
       - name: Build APK
-        run: cd android && ./gradlew assembleRelease
+        run: |
+          echo "JAVA_HOME is $JAVA_HOME"
+          cd android
+          ./gradlew assembleRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v4

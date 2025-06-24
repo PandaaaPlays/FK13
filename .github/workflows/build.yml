@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 18
       - run: npm install
-      - run: npx ionic build
+      - run: npx ionic build --project Angular-FK13
       - run: npx cap sync android
       - run: cd android && ./gradlew assembleRelease
       - name: Upload APK

@@ -9,15 +9,27 @@ on:
 jobs:
   build_android:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: npm install
-      - run: npx ionic build --project Angular-FK13
-      - run: npx cap sync android
-      - run: cd android && ./gradlew assembleRelease
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build web assets
+        run: ionic build --project Angular-FK13
+
+      - name: Sync Capacitor
+        run: npx cap sync android
+
+      - name: Build APK
+        run: cd android && ./gradlew assembleRelease
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:

@@ -1,7 +1,0 @@
-{
-  "name": "Angular-FK13",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

@@ -30,6 +30,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/fk13/",
               "budgets": [
                 {
                   "type": "initial",

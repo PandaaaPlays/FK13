@@ -2,8 +2,8 @@
   "name": "FK13",
   "short_name": "FK13",
   "display": "standalone",
-  "scope": "./",
-  "start_url": "./",
+  "scope": "/FK13/",
+  "start_url": "/FK13/",
   "icons": [
     {
       "src": "icons/icon-72x72.png",

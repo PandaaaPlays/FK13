@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1751401713041,
-  "index": "/fk13/index.html",
+  "timestamp": 1751402381717,
+  "index": "/FK13/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,10 +11,10 @@
         "ignoreVary": true
       },
       "urls": [
-        "/fk13/index.html",
-        "/fk13/main-W6EQLJHH.js",
-        "/fk13/polyfills-B6TNHZQ6.js",
-        "/fk13/styles-Q63VREGS.css"
+        "/FK13/index.html",
+        "/FK13/main-W6EQLJHH.js",
+        "/FK13/polyfills-B6TNHZQ6.js",
+        "/FK13/styles-Q63VREGS.css"
       ],
       "patterns": []
     },
@@ -26,18 +26,18 @@
         "ignoreVary": true
       },
       "urls": [
-        "/fk13/assets/images/icon.png"
+        "/FK13/assets/images/icon.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/fk13/assets/images/icon.png": "d318db823f8ba4cab310da6bf528ad2b15fe3cd5",
-    "/fk13/index.html": "04bd9ccc943c1a983800d41c967dad8e6c6446da",
-    "/fk13/main-W6EQLJHH.js": "f5f41a3784bc263915c23aeb60adda1d4534f408",
-    "/fk13/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
-    "/fk13/styles-Q63VREGS.css": "dd661cae8d25057c2aee287a1bf0539d4454c10e"
+    "/FK13/assets/images/icon.png": "d318db823f8ba4cab310da6bf528ad2b15fe3cd5",
+    "/FK13/index.html": "a4ca41a67c4e5c53dc9fac3f77a05d5dc6da2dd4",
+    "/FK13/main-W6EQLJHH.js": "f5f41a3784bc263915c23aeb60adda1d4534f408",
+    "/FK13/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/FK13/styles-Q63VREGS.css": "dd661cae8d25057c2aee287a1bf0539d4454c10e"
   },
   "navigationUrls": [
     {

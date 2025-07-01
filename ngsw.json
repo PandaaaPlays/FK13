@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1751403480879,
+  "timestamp": 1751403669470,
   "index": "/FK13/index.html",
   "assetGroups": [
     {
@@ -37,7 +37,7 @@
     "/FK13/assets/images/icon.png": "d318db823f8ba4cab310da6bf528ad2b15fe3cd5",
     "/FK13/index.html": "c0215f44ebacd03592ee0f1e25ddd0f075764431",
     "/FK13/main-PVK5ORA3.js": "1a7fab1297136ce78353ad093d11ae5456a2c1fe",
-    "/FK13/manifest.webmanifest": "3ecabe5897982b7375ad59b7dd220256a9295f0c",
+    "/FK13/manifest.webmanifest": "bfb900bd85932833e96950f451de4a7c5c2bc321",
     "/FK13/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
     "/FK13/styles-Q63VREGS.css": "dd661cae8d25057c2aee287a1bf0539d4454c10e"
   },

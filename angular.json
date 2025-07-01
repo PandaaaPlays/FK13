@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/FK13/",
             "outputPath": "dist/fk13",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -30,7 +31,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/fk13/",
               "budgets": [
                 {
                   "type": "initial",

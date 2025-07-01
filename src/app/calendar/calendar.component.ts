@@ -44,6 +44,7 @@ export class CalendarComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['artist'] && !changes['artist'].firstChange) {
+      this.selectedDate = undefined;
       this.generateCalendar();
     }
   }
@@ -112,5 +113,9 @@ export class CalendarComponent implements OnInit, OnChanges {
       this.currentDisplayedMonth.getFullYear() < this.today.getFullYear() ||
       (this.currentDisplayedMonth.getFullYear() == this.today.getFullYear() && this.currentDisplayedMonth.getMonth() <= this.today.getMonth())
     );
+  }
+
+  capitalize(str: string) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
   }
 }

@@ -1,0 +1,48 @@
+[
+  {
+    "eventName": "Event name",
+    "clientName": "JPDL",
+    "date": "2025-07-27",
+    "location": "Berlin",
+    "address": "123 Main St, Berlin",
+    "contacts_on_site": [
+      "Client : JPDL - Carole - (581) 446-5100",
+      "Coordo : Maryan - (418) 327-0088",
+      "Coordo : Marc - (514) 592-3268"
+    ],
+    "artists": [
+      {
+        "name": "Triplette2",
+        "description": "Alexia, Clara, Sam",
+        "schedule": [
+          "18h00 - 18h20",
+          "18h30 - 18h50",
+          "19h00 - 19h20"
+        ]
+      }
+    ]
+  },
+  {
+    "eventName": "Event name",
+    "clientName": "JPDL",
+    "date": "2025-07-26",
+    "location": "Berlin",
+    "address": "123 Main St, Berlin",
+    "contacts_on_site": [
+      "Client : JPDL - Carole - (581) 446-5100",
+      "Coordo : Maryan - (418) 327-0088",
+      "Coordo : Marc - (514) 592-3268"
+    ],
+    "artists": [
+      {
+        "name": "Triplette",
+        "description": "Alexia, Clara, Sam",
+        "schedule": [
+          "18h00 - 18h20",
+          "18h30 - 18h50",
+          "19h00 - 19h20"
+        ]
+      }
+    ]
+  }
+]

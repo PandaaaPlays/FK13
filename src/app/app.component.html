@@ -1,0 +1,17 @@
+<div class="header">
+  <img src="assets/images/icon.png" alt="FK13" class="icon">
+</div>
+<div class="splitter"></div>
+<div class="body">
+  <div class="artists">
+    Titre d'artiste :
+    <div class="artists-select">
+      <select [(ngModel)]="selectedArtist">
+        <option value="" selected>Tous</option>
+        <option *ngFor="let name of artistNames" [value]="name">{{ name }}</option>
+      </select>
+    </div>
+  </div>
+
+  <calendar [artist]="selectedArtist"></calendar>
+</div>

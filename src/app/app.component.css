@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+
+  & img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.splitter {
+  height: 2px;
+  margin: 0 25px;
+  background: linear-gradient(90deg, #590169, #c36);
+}
+
+.body {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.artists {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  margin: 5px auto 15px auto;
+  width: 80%;
+  font-family: Poppins, sans-serif;
+}
+
+.artists-select {
+  position: relative;
+  flex-shrink: 0;
+  height: 35px;
+  background-color: white;
+  border-radius: 4px;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.artists-select select {
+  font-size: 16px;
+  width: 100%;
+  padding: 7px 24px 7px 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #1c1c1c;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+option {
+  font-size: 13px;
+}
+
+.artists-select select:active, .artists-select select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.artists-select:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  border-top: 5px solid #aaa;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+

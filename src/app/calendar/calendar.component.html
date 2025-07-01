@@ -1,0 +1,22 @@
+<div class="calendar">
+  <div class="header">
+    <button (click)="prevMonth()" [disabled]="isPrevDisabled()">⇦</button>
+    <h2>{{ currentDisplayedMonth.toLocaleString('default', { month: 'long' }) }} {{ currentYear }}</h2>
+    <button (click)="nextMonth()">⇨</button>
+  </div>
+  <div class="calendar-grid">
+    <div class="day-name" *ngFor="let dayName of dayNames">
+      {{ dayName }}
+    </div>
+    <div class="blank" *ngFor="let _ of [].constructor(firstDayOffset)"></div>
+    <div
+      *ngFor="let day of days"
+      class="day"
+      [class.today]="day.isToday"
+      [class.selected]="isSelected(day.fullDate)"
+      [class.disabled]="day.isPast || !day.isEnabled"
+      (click)="!day.isPast && day.isEnabled && selectDate(day)">
+      {{ day.date }}
+    </div>
+  </div>
+</div>

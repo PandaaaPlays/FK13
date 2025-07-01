@@ -1,0 +1,61 @@
+{
+  "configVersion": 1,
+  "timestamp": 1751335609187,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/index.html",
+        "/main-3RDCZJAJ.js",
+        "/polyfills-B6TNHZQ6.js",
+        "/styles-YAKPL2LN.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/images/icon.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/images/icon.png": "d318db823f8ba4cab310da6bf528ad2b15fe3cd5",
+    "/index.html": "8f55c284f35b0ea2e23662e109f9112083b2ec8c",
+    "/main-3RDCZJAJ.js": "9656595fd3199502c62b7a25f159e700c0395276",
+    "/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/styles-YAKPL2LN.css": "e12649823d3801841064dc578d1a9b466e9374f6"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

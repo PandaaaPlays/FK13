@@ -12,6 +12,21 @@
       </select>
     </div>
   </div>
+  <calendar [artist]="selectedArtist" (dateSelected)="onDateSelected($event)"></calendar>
+  <div class="events">
+    <div class="event" *ngFor="let event of eventsOnSelectedDate">
+      <div class="event-date">
+        <span class="event-day">{{ event.date | date: 'dd' }}</span>
+        <span class="event-month">{{ event.date | date: 'MMM' }}</span>
+      </div>
+      <div class="event-details">
+        <h3>{{ event.eventName }}</h3>
+        <p>{{ event.clientName }}</p>
+        <p class="event-artist">Artiste : {{ event.artists }}</p>
+      </div>
+    </div>
+  </div>
 
-  <calendar [artist]="selectedArtist"></calendar>
+  <!--button *ngIf="!(authService.user$)" (click)="authService.login()">Login</button>
+  <button *ngIf="authService.user$" (click)="authService.logout()">Logout</button-->
 </div>

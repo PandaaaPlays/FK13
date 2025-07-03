@@ -39,22 +39,17 @@ export class EventsService {
     );
   }
 
-  getSchedulesByArtist(artistName: string): Observable<{ event: FK13Event, schedule: string[] }[]> {
+  getEventsByArtist(artistName: string): Observable<FK13Event[]> {
     return this.getEvents().pipe(
-      map(events =>
-        events.flatMap(event => {
-          // If no artistName is provided, include all artists
-          const matchingArtists = artistName
-            ? event.artists.filter(a => a.name === artistName)
-            : event.artists;
-
-          return matchingArtists.map(artist => ({
-            event,
-            schedule: artist.schedule
-          }));
-        })
-      )
+      map(events => {
+        if (!artistName || artistName.trim() === '') {
+          return events; // Return all events if name is empty or whitespace
+        } else {
+          return events.filter(event =>
+            event.artists.some(artist => artist.name === artistName)
+          );
+        }
+      })
     );
   }
-
 }

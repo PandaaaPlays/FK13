@@ -45,16 +45,17 @@ export class CalendarComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['artist'] && !changes['artist'].firstChange) {
       this.selectedDate = undefined;
+      this.dateSelected.emit(this.selectedDate);
       this.generateCalendar();
     }
   }
 
-  schedules: { event: FK13Event, schedule: string[] }[] = [];
+  events: FK13Event[] = [];
   generateCalendar(): void {
-    this.eventsService.getSchedulesByArtist(this.artist || '').subscribe(data => {
-      this.schedules = data;
+    this.eventsService.getEventsByArtist(this.artist || '').subscribe(data => {
+      this.events = data;
 
-      const eventDates = this.schedules.map(s => new Date(s.event.date));
+      const eventDates = this.events.map(e => new Date(e.date));
 
       this.days = [];
       const daysAmount = new Date(this.currentDisplayedMonth.getFullYear(), this.currentDisplayedMonth.getMonth() + 1, 0).getDate();
@@ -82,6 +83,7 @@ export class CalendarComponent implements OnInit, OnChanges {
 
   selectDate(day: { date: number, fullDate: Date }) {
     this.selectedDate = day.fullDate;
+    this.dateSelected.emit(day.fullDate);
   }
 
   isSelected(date: Date): boolean {
